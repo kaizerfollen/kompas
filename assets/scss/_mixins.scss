@@ -1,0 +1,105 @@
+@mixin link {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  &:hover {
+    color: #0584FE;
+  }
+}
+
+@mixin benefit-card {
+  display: flex;
+  align-items: center;
+  background-color: #FBFCFD;
+  border: 1px solid #EEEFF1;
+  padding: 20px 24px;
+  border-radius: 10px;
+  &__icon {
+    flex-shrink: 0;
+    width: 59px;
+    height: 59px;
+  }
+  &__info {
+    text-align: left;
+    margin-left: 15px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 18px;
+    color: #1253A2;
+  }
+  &__text {
+    color: #000;
+    font-family: "PT Sans";
+    font-size: 15px;
+  }
+}
+
+@mixin slider-card {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #0000001F;
+  text-align: left;
+  &__title {
+    font-family: "PT Sans";
+    font-size: 31px;
+    font-weight: 700;
+    color: #1253A2;
+    line-height: 37px;
+  }
+  &__text {
+    margin-top: 15px;
+    font-family: "PT Sans";
+    font-weight: 400;
+    color: #000;
+  }
+  &__link {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    display: inline-block;
+    bottom: 25px;
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@mixin title-page {
+  .title {
+    margin-top: 20px;
+    // margin-bottom: 40px;
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 41px;
+    color: #000;
+  }
+}
+
+@mixin text-info {
+  .text-info {
+    margin-top: 40px;
+    .title {
+      margin-bottom: 25px;
+      font-family: "PT Sans";
+      font-weight: 700;
+      font-size: 41px;
+      color: #383838;
+    }
+    .text {
+      font-family: "PT Sans";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: justify;
+      color: #000;
+      margin-bottom: 15px;
+    }
+  }
+}
